@@ -450,6 +450,38 @@ sccriptsec:AddButton({
     end
 
 })
+
+local UilityTab = pepsi:CreateTab({
+
+    Name = "Utility"
+
+}) 
+
+local Strenght = UilityTab:CreateSection({
+
+    Name = "Strenght"
+
+})
+
+local strenghtValue
+
+Strenght:AddSlider({
+
+    Name  = "Strenght",
+    Value = 50 , 
+    Precise = 1 ,
+    Min = 0 ,
+    Max = 100 , 
+    Callback = function (Value)
+        strenghtValue = Value
+        if cmdlp.ClassName == "Part" then
+            player.CustomPhysicalProperties = PhysicalProperties.new(strenghtValue, 0.3, 0.5)
+        end
+
+    end
+
+})
+
 function findplr(args, tbl)
 	if tbl == nil then
 		local tbl = cmdp:GetPlayers()
