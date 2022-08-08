@@ -523,6 +523,19 @@ antiAFK:AddButton({
 
 })
 
+
+local AnimTAB = pepsi:CreateTab({
+
+    Name = "Animations"
+
+})
+
+local sneakySEC = AnimTAB:CreateSection({
+
+    Name = "Sneaky"
+
+})
+
 function findplr(args, tbl)
 	if tbl == nil then
 		local tbl = cmdp:GetPlayers()
