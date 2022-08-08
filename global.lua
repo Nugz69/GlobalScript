@@ -516,6 +516,9 @@ antiAFK:AddButton({
         wait(1)
         vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
         end)
+
+        print("You wwill not get kicked out from being afk anymore!")
+
     end
 
 })
