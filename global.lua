@@ -548,6 +548,72 @@ sneakySEC:AddLabel({
 
 })
 
+sneakySEC:AddButton({
+
+    Name = "Start!",
+    Callback = function()
+        local Char = cmdlp.Character
+		Char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1132461372"
+		Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1132469004"
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1132473842"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1132477671"
+		Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1132489853"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1132494274"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=1132500520"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=1132506407"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1132510133"
+    end
+
+})
+local oldSEC = AnimTAB:CreateSection(({
+
+    Name = "Old",
+
+}))
+
+oldSEC:AddButton({
+
+    Name = "Load!",
+    Callback = function()
+        local Char = cmdlp.Character
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=387947158"
+		Char.Animate.idle.Animation1.Weight.Value = "9"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=387947464"
+		Char.Animate.idle.Animation2.Weight.Value = "1"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=387947975"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=616092998"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=616094091"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=382460631"
+    end
+
+})
+
+local toySEC = AnimTAB:CreateSection({
+
+    Name = "Toy"
+
+})
+
+toySEC:AddButton({
+
+    Name = "Load!",
+    Callback = function()
+        local Char = cmdlp.Character
+		Char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+		Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+		Char.Animate.idle.Animation1.Weight.Value = "9"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+		Char.Animate.idle.Animation2.Weight.Value = "1"
+		Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=782844582"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=782845186"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+    end
+
+})
+
 function findplr(args, tbl)
 	if tbl == nil then
 		local tbl = cmdp:GetPlayers()
