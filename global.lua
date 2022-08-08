@@ -482,6 +482,24 @@ Strenght:AddSlider({
 
 })
 
+local Ragdoll = UilityTab:CreateSection({
+
+    Name = "Ragdoll",
+    Side = "Right"
+
+})
+
+Ragdoll:AddToggle({
+
+    Name = "No Ragdoll",
+    Callback = function (bool)
+        if cmdlp.Character then
+            cmdlp.Character.Humanoid.PlatformStand = bool 
+        end
+    end
+
+})
+
 function findplr(args, tbl)
 	if tbl == nil then
 		local tbl = cmdp:GetPlayers()
