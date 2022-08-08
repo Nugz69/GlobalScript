@@ -716,7 +716,7 @@ astronautSEC:AddButton({
 
 local vampireSEC = AnimTAB:CreateSection({
 
-    Name = "Load!"
+    Name = "Vampire!"
 
 })
 
