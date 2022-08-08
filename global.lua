@@ -8,7 +8,7 @@ local Mouse = Plr:GetMouse()
 
 local pepsi = Library:CreateWindow ({
 
-    Name = "Global Script by - NugzyF",
+    Name = "Global - NugzyF - V1.0",
     Themeable = {
 
         Info = "Made with love <3"
