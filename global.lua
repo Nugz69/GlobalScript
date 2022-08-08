@@ -825,6 +825,140 @@ levitationSEC:AddButton({
 
 })
 
+local resetSEC = AnimTAB:CreateSection({
+
+    Name = "Reset Player" , 
+    Side = "Right"
+
+})
+
+resetSEC:AddButton({
+
+    Name = "Reset" , 
+    Callback = function()
+        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end
+
+})
+
+local bubblySEC = AnimTAB:CreateSection({
+
+    Name = "bubbly",
+    Side = "Right"
+
+})
+
+bubblySEC:AddButton({
+
+    Name = "Load!",
+    Callback = function ()
+        local Char = cmdlp.Character
+		Char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=909997997"
+		Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
+		Char.Animate.idle.Animation1.Weight.Value = "9"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
+		Char.Animate.idle.Animation2.Weight.Value = "1"
+		Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"local Char = cmdlp.Character
+		Char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=909997997"
+		Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
+		Char.Animate.idle.Animation1.Weight.Value = "9"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
+		Char.Animate.idle.Animation2.Weight.Value = "1"
+		Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"
+    end
+
+})
+
+local werewolfSEC = AnimTAB:CreateSection({
+
+    Name = "Werewolf"
+
+})
+
+werewolfSEC:AddButton({
+
+    Name = "Load!" , 
+    Callback = function ()
+        local Char = cmdlp.Character
+		Char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+		Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+		Char.Animate.idle.Animation1.Weight.Value = "9"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+		Char.Animate.idle.Animation2.Weight.Value = "1"
+		Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=1083222527"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=1083225406"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+    end
+
+})
+
+local stylishSEC = AnimTAB:CreateSection({
+
+    Name = "Stylish",
+    Side = "Right"
+
+})
+
+stylishSEC:AddButton({
+
+    Name = "Stylish",
+    Callback = function ()
+        local Char = cmdlp.Character
+		Char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616133594"
+		Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616134815"
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616136790"
+		Char.Animate.idle.Animation1.Weight.Value = "9"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616138447"
+		Char.Animate.idle.Animation2.Weight.Value = "1"
+		Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616139451"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616140816"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=616143378"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=616144772"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616146177"
+    end
+
+})
+
+local mageSEC = AnimTAB:CreateSection({
+
+    Name = "Mage" , 
+    Side = "Right"
+
+})
+
+mageSEC:AddButton({
+
+    Name = "Load!",
+    Callback = function ()
+        local Char = cmdlp.Character
+		Char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=707826056"
+		Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=707742142"
+		Char.Animate.idle.Animation1.Weight.Value = "9"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=707855907"
+		Char.Animate.idle.Animation2.Weight.Value = "1"
+		Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=707853694"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=707876443"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=707894699"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=707897309"
+    end
+
+})
+
 function findplr(args, tbl)
 	if tbl == nil then
 		local tbl = cmdp:GetPlayers()
