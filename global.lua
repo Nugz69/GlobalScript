@@ -642,6 +642,12 @@ pirateSEC:AddButton({
 
 local knightSEC = AnimTAB:CreateSection({
 
+    Name = "Knight"
+
+})
+
+knightSEC:AddButton({
+
     Name = "Load!",
     Callback = function()
         local Char = cmdlp.Character
