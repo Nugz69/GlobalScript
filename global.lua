@@ -536,6 +536,18 @@ local sneakySEC = AnimTAB:CreateSection({
 
 })
 
+sneakySEC:AddLabel({
+
+    Name = "Reset to fix!"
+
+})
+
+sneakySEC:AddLabel({
+
+    Name = "(FIXING)"
+
+})
+
 function findplr(args, tbl)
 	if tbl == nil then
 		local tbl = cmdp:GetPlayers()
