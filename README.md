@@ -1,0 +1,2 @@
+# GlobalScript
+a
