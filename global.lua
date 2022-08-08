@@ -881,7 +881,8 @@ bubblySEC:AddButton({
 
 local werewolfSEC = AnimTAB:CreateSection({
 
-    Name = "Werewolf"
+    Name = "Werewolf",
+    Side = "Right"
 
 })
 
