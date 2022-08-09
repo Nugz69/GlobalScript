@@ -4,6 +4,7 @@ local cmdrs = game:GetService("ReplicatedStorage")
 local cmdp = game:GetService("Players")
 local Plr = game:GetService("Players").LocalPlayer
 local Mouse = Plr:GetMouse()
+local Char = cmdlp.Character
 
 
 local pepsi = Library:CreateWindow ({
@@ -957,6 +958,59 @@ mageSEC:AddButton({
 		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=707894699"
 		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=707897309"
     end
+
+})
+
+local cartoonySEC = AnimTAB:CreateSection({
+
+	Name = "Cartoony",
+	Side = "Right"
+
+})
+
+cartoonySEC:AddButton({
+
+	Name = "Load!",
+	Callback = function()
+		local Char = cmdlp.Character
+		Char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+		Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+		Char.Animate.idle.Animation1.Weight.Value = "9"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742638445"
+		Char.Animate.idle.Animation2.Weight.Value = "1"
+		Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=742637942"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=742638842"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=742639220"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=742639812"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=742640026"
+	end
+
+})
+
+local zombieSEC = AnimTAB:CreateSection({
+
+	Name = "Zombie",
+	Side = "Right"
+
+})
+
+zombieSEC:AddButton({
+
+	Name = "Load!",
+	Callback = function()
+		Char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+		Char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+		Char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+		Char.Animate.idle.Animation1.Weight.Value = "9"
+		Char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+		Char.Animate.idle.Animation2.Weight.Value = "1"
+		Char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+		Char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+		Char.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=616165109"
+		Char.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=616166655"
+		Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+	end
 
 })
 
