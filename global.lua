@@ -1029,7 +1029,14 @@ local chatSEC = GameTAB:CreateSection({
 chatSEC:AddToggle({
 
 	Name = "HideChat",
-	Callback = function()
+	Callback = function(bool)
+
+		if bool then
+			game:GetService("StarterGui"):SetCoreGuiEnabled('Chat',false)
+		else
+			game:GetService("StarterGui"):SetCoreGuiEnabled('Chat',true)
+		end
+
 	end
 
 })
