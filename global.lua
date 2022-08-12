@@ -382,6 +382,27 @@ Player:AddButton({
 
 })
 
+getgenv().bhopping = false
+
+Player:AddToggle({
+
+	Name = "Bhop"
+	,Callback = function(bool)
+
+		getgenv().bhopping = bool
+		if cmdlp.Character then 
+			while bhopping do
+				cmdlp.Character.Humanoid.Jump = true
+			end
+
+		elseif bhopping == false then 
+			cmdlp.Character.Humanoid.Jump = false
+		end
+
+	end
+
+})
+
 local sccriptsec = GeneralTAB:CreateSection(
 
     {
