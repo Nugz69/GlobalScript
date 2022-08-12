@@ -1014,6 +1014,26 @@ zombieSEC:AddButton({
 
 })
 
+local GameTAB = pepsi:CreateTab({
+
+	Name = "Game"
+
+})
+
+local chatSEC = GameTAB:CreateSection({
+
+	Name = "Chat"
+
+})
+
+chatSEC:AddToggle({
+
+	Name = "HideChat",
+	Callback = function()
+	end
+
+})
+
 function findplr(args, tbl)
 	if tbl == nil then
 		local tbl = cmdp:GetPlayers()
